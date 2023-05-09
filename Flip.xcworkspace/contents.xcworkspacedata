@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:Core"
+      name = "Core">
+      <FileRef
+         location = "group:CommonCore/CommonCore.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:ScreenshareCore/ScreenshareCore.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:ToMobileCore/ToMobileCore.xcodeproj">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:FlipMobile/FlipMobile.xcodeproj">
+   </FileRef>
+</Workspace>
