@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		87026F6A2A09F0E000B710D0 /* ToMobileCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026F692A09F0E000B710D0 /* ToMobileCoreTests.swift */; };
 		87026F6B2A09F0E000B710D0 /* ToMobileCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026F4C2A09E7E700B710D0 /* ToMobileCore.framework */; };
+		87F174FC2A0A1BEA0002E999 /* ExportGuideSwiftUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F174FB2A0A1BEA0002E999 /* ExportGuideSwiftUIViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +26,7 @@
 		87026F4C2A09E7E700B710D0 /* ToMobileCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ToMobileCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87026F672A09F0E000B710D0 /* ToMobileCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToMobileCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87026F692A09F0E000B710D0 /* ToMobileCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToMobileCoreTests.swift; sourceTree = "<group>"; };
+		87F174FB2A0A1BEA0002E999 /* ExportGuideSwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportGuideSwiftUIViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +51,7 @@
 		87026F422A09E7E700B710D0 = {
 			isa = PBXGroup;
 			children = (
-				87026F4E2A09E7E700B710D0 /* ToMobileCore */,
+				87F174F72A0A172A0002E999 /* ToMobileCore */,
 				87026F682A09F0E000B710D0 /* ToMobileCoreTests */,
 				87026F4D2A09E7E700B710D0 /* Products */,
 			);
@@ -64,19 +66,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		87026F4E2A09E7E700B710D0 /* ToMobileCore */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ToMobileCore;
-			sourceTree = "<group>";
-		};
 		87026F682A09F0E000B710D0 /* ToMobileCoreTests */ = {
 			isa = PBXGroup;
 			children = (
 				87026F692A09F0E000B710D0 /* ToMobileCoreTests.swift */,
 			);
 			path = ToMobileCoreTests;
+			sourceTree = "<group>";
+		};
+		87F174F72A0A172A0002E999 /* ToMobileCore */ = {
+			isa = PBXGroup;
+			children = (
+				87F174FB2A0A1BEA0002E999 /* ExportGuideSwiftUIViewModel.swift */,
+			);
+			path = ToMobileCore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +143,7 @@
 				TargetAttributes = {
 					87026F4B2A09E7E700B710D0 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					87026F662A09F0E000B710D0 = {
 						CreatedOnToolsVersion = 14.2;
@@ -187,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87F174FC2A0A1BEA0002E999 /* ExportGuideSwiftUIViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +337,7 @@
 		87026F542A09E7E700B710D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -352,6 +358,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -360,6 +367,7 @@
 		87026F552A09E7E700B710D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -388,6 +396,7 @@
 		87026F6F2A09F0E000B710D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9X6R656Z24;
@@ -405,6 +414,7 @@
 		87026F702A09F0E000B710D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9X6R656Z24;

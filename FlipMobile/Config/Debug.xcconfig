@@ -1,0 +1,11 @@
+//
+//  Debug.xcconfig
+//  FlipMobile
+//
+//  Created by iOS_hoai_new on 09/05/2023.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+APP_NAME = Tên ở Debug

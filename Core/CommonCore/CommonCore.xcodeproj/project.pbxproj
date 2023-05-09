@@ -49,7 +49,7 @@
 		87026F1A2A09E73000B710D0 = {
 			isa = PBXGroup;
 			children = (
-				87026F262A09E73000B710D0 /* CommonCore */,
+				87F174F52A0A17100002E999 /* CommonCore */,
 				87026F842A09F12700B710D0 /* CommonCoreTests */,
 				87026F252A09E73000B710D0 /* Products */,
 			);
@@ -64,19 +64,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		87026F262A09E73000B710D0 /* CommonCore */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CommonCore;
-			sourceTree = "<group>";
-		};
 		87026F842A09F12700B710D0 /* CommonCoreTests */ = {
 			isa = PBXGroup;
 			children = (
 				87026F852A09F12700B710D0 /* CommonCoreTests.swift */,
 			);
 			path = CommonCoreTests;
+			sourceTree = "<group>";
+		};
+		87F174F52A0A17100002E999 /* CommonCore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CommonCore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

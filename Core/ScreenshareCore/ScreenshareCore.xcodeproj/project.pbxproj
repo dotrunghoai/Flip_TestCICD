@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		87026F782A09F10B00B710D0 /* ScreenshareCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026F772A09F10B00B710D0 /* ScreenshareCoreTests.swift */; };
 		87026F792A09F10B00B710D0 /* ScreenshareCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026F382A09E78A00B710D0 /* ScreenshareCore.framework */; };
+		87F174FA2A0A184A0002E999 /* EnterURLSwiftUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F174F92A0A184A0002E999 /* EnterURLSwiftUIViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +26,7 @@
 		87026F382A09E78A00B710D0 /* ScreenshareCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScreenshareCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87026F752A09F10B00B710D0 /* ScreenshareCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenshareCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87026F772A09F10B00B710D0 /* ScreenshareCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshareCoreTests.swift; sourceTree = "<group>"; };
+		87F174F92A0A184A0002E999 /* EnterURLSwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterURLSwiftUIViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +51,7 @@
 		87026F2E2A09E78A00B710D0 = {
 			isa = PBXGroup;
 			children = (
-				87026F3A2A09E78A00B710D0 /* ScreenshareCore */,
+				87F174F62A0A171D0002E999 /* ScreenshareCore */,
 				87026F762A09F10B00B710D0 /* ScreenshareCoreTests */,
 				87026F392A09E78A00B710D0 /* Products */,
 			);
@@ -64,19 +66,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		87026F3A2A09E78A00B710D0 /* ScreenshareCore */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ScreenshareCore;
-			sourceTree = "<group>";
-		};
 		87026F762A09F10B00B710D0 /* ScreenshareCoreTests */ = {
 			isa = PBXGroup;
 			children = (
 				87026F772A09F10B00B710D0 /* ScreenshareCoreTests.swift */,
 			);
 			path = ScreenshareCoreTests;
+			sourceTree = "<group>";
+		};
+		87F174F62A0A171D0002E999 /* ScreenshareCore */ = {
+			isa = PBXGroup;
+			children = (
+				87F174F92A0A184A0002E999 /* EnterURLSwiftUIViewModel.swift */,
+			);
+			path = ScreenshareCore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +143,7 @@
 				TargetAttributes = {
 					87026F372A09E78A00B710D0 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					87026F742A09F10B00B710D0 = {
 						CreatedOnToolsVersion = 14.2;
@@ -187,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87F174FA2A0A184A0002E999 /* EnterURLSwiftUIViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +337,7 @@
 		87026F402A09E78A00B710D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -352,6 +358,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -360,6 +367,7 @@
 		87026F412A09E78A00B710D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -388,6 +396,7 @@
 		87026F7D2A09F10B00B710D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9X6R656Z24;
@@ -405,6 +414,7 @@
 		87026F7E2A09F10B00B710D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9X6R656Z24;

@@ -17,6 +17,8 @@
 		87026F942A09F16800B710D0 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026F932A09F16800B710D0 /* ReplayKit.framework */; };
 		87026F972A09F16800B710D0 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026F962A09F16800B710D0 /* SampleHandler.swift */; };
 		87026F9B2A09F16800B710D0 /* FlipMobileUploadExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 87026F912A09F16800B710D0 /* FlipMobileUploadExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		87F174F82A0A177C0002E999 /* SocketIO.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026FA62A09FF8600B710D0 /* SocketIO.xcframework */; };
+		87F174FE2A0A1D9B0002E999 /* Starscream.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F174FD2A0A1D9B0002E999 /* Starscream.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,12 @@
 		87026F932A09F16800B710D0 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
 		87026F962A09F16800B710D0 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
 		87026F982A09F16800B710D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87026FA12A09FD5800B710D0 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		87026FA22A09FD6D00B710D0 /* AppStore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppStore.xcconfig; sourceTree = "<group>"; };
+		87026FA52A09FF8600B710D0 /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Nimble.xcframework; path = ../Carthage/Build/Nimble.xcframework; sourceTree = "<group>"; };
+		87026FA62A09FF8600B710D0 /* SocketIO.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SocketIO.xcframework; path = ../Carthage/Build/SocketIO.xcframework; sourceTree = "<group>"; };
+		87026FA72A09FF8600B710D0 /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Quick.xcframework; path = ../Carthage/Build/Quick.xcframework; sourceTree = "<group>"; };
+		87F174FD2A0A1D9B0002E999 /* Starscream.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Starscream.xcframework; path = ../Carthage/Build/Starscream.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87F174FE2A0A1D9B0002E999 /* Starscream.xcframework in Frameworks */,
+				87F174F82A0A177C0002E999 /* SocketIO.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +106,7 @@
 		87026EF72A09E4CE00B710D0 = {
 			isa = PBXGroup;
 			children = (
+				87026FA02A09FC9000B710D0 /* Config */,
 				87026F022A09E4CE00B710D0 /* FlipMobile */,
 				87026F5B2A09F09D00B710D0 /* FlipMobileTests */,
 				87026F952A09F16800B710D0 /* FlipMobileUploadExtension */,
@@ -139,6 +150,10 @@
 		87026F922A09F16800B710D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				87F174FD2A0A1D9B0002E999 /* Starscream.xcframework */,
+				87026FA52A09FF8600B710D0 /* Nimble.xcframework */,
+				87026FA72A09FF8600B710D0 /* Quick.xcframework */,
+				87026FA62A09FF8600B710D0 /* SocketIO.xcframework */,
 				87026F932A09F16800B710D0 /* ReplayKit.framework */,
 			);
 			name = Frameworks;
@@ -153,6 +168,15 @@
 			path = FlipMobileUploadExtension;
 			sourceTree = "<group>";
 		};
+		87026FA02A09FC9000B710D0 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				87026FA12A09FD5800B710D0 /* Debug.xcconfig */,
+				87026FA22A09FD6D00B710D0 /* AppStore.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,6 +188,7 @@
 				87026EFD2A09E4CE00B710D0 /* Frameworks */,
 				87026EFE2A09E4CE00B710D0 /* Resources */,
 				87026F9F2A09F16800B710D0 /* Embed Foundation Extensions */,
+				87026FA42A09FEAA00B710D0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -279,6 +304,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		87026FA42A09FEAA00B710D0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/SocketIO.xcframework/ios-arm64/SocketIO.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# /usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		87026EFC2A09E4CE00B710D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -343,6 +389,7 @@
 /* Begin XCBuildConfiguration section */
 		87026F122A09E4D000B710D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87026FA12A09FD5800B710D0 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -403,6 +450,7 @@
 		};
 		87026F132A09E4D000B710D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87026FA22A09FD6D00B710D0 /* AppStore.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -457,6 +505,7 @@
 		};
 		87026F152A09E4D000B710D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87026FA12A09FD5800B710D0 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -486,6 +535,7 @@
 		};
 		87026F162A09E4D000B710D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87026FA22A09FD6D00B710D0 /* AppStore.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -515,6 +565,7 @@
 		};
 		87026F602A09F09D00B710D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87026FA12A09FD5800B710D0 /* Debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +585,7 @@
 		};
 		87026F612A09F09D00B710D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87026FA22A09FD6D00B710D0 /* AppStore.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -553,6 +605,7 @@
 		};
 		87026F9D2A09F16800B710D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87026FA12A09FD5800B710D0 /* Debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -579,6 +632,7 @@
 		};
 		87026F9E2A09F16800B710D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87026FA22A09FD6D00B710D0 /* AppStore.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
