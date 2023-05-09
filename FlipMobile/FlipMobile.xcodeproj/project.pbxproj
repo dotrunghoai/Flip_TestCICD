@@ -17,8 +17,8 @@
 		87026F942A09F16800B710D0 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026F932A09F16800B710D0 /* ReplayKit.framework */; };
 		87026F972A09F16800B710D0 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026F962A09F16800B710D0 /* SampleHandler.swift */; };
 		87026F9B2A09F16800B710D0 /* FlipMobileUploadExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 87026F912A09F16800B710D0 /* FlipMobileUploadExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		87F174F82A0A177C0002E999 /* SocketIO.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026FA62A09FF8600B710D0 /* SocketIO.xcframework */; };
 		87F174FE2A0A1D9B0002E999 /* Starscream.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F174FD2A0A1D9B0002E999 /* Starscream.xcframework */; };
+		87F175042A0A43A80002E999 /* SocketIO.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026FA62A09FF8600B710D0 /* SocketIO.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,8 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87F175042A0A43A80002E999 /* SocketIO.xcframework in Frameworks */,
 				87F174FE2A0A1D9B0002E999 /* Starscream.xcframework in Frameworks */,
-				87F174F82A0A177C0002E999 /* SocketIO.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
