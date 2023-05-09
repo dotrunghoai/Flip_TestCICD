@@ -115,6 +115,7 @@
 				87026F342A09E78A00B710D0 /* Sources */,
 				87026F352A09E78A00B710D0 /* Frameworks */,
 				87026F362A09E78A00B710D0 /* Resources */,
+				87F175032A0A40810002E999 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -197,6 +198,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87F175032A0A40810002E999 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/SocketIO.xcframework/ios-arm64/SocketIO.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		87026F342A09E78A00B710D0 /* Sources */ = {
