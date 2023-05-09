@@ -29,16 +29,16 @@ jobs:
         run: xcodebuild clean build -workspace Flip.xcworkspace -scheme "FlipMobile Debug" -destination "${destination}" CODE_SIGN_IDENTITY="" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
         env:
           destination: ${{ matrix.destination }}
+      - name: ScreenshareCoreTests
+        run: xcodebuild clean test -workspace Flip.xcworkspace -scheme "ScreenshareCoreTests" -destination "${destination}" CODE_SIGN_IDENTITY="" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
+        env:
+          destination: ${{ matrix.destination }}
       - name: FlipMobileTests
         run: xcodebuild clean test -workspace Flip.xcworkspace -scheme "FlipMobileTests" -destination "${destination}" CODE_SIGN_IDENTITY="" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
         env:
           destination: ${{ matrix.destination }}
       - name: CommonCoreTests
         run: xcodebuild clean test -workspace Flip.xcworkspace -scheme "CommonCoreTests" -destination "${destination}" CODE_SIGN_IDENTITY="" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
-        env:
-          destination: ${{ matrix.destination }}
-      - name: ScreenshareCoreTests
-        run: xcodebuild clean test -workspace Flip.xcworkspace -scheme "ScreenshareCoreTests" -destination "${destination}" CODE_SIGN_IDENTITY="" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
         env:
           destination: ${{ matrix.destination }}
       - name: ToMobileCoreTests
