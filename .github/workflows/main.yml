@@ -1,5 +1,5 @@
 name: CI-CD
-run-name: Deploy to ${{ inputs.deploy_target }} by @${{ github.actor }} and1 @${{ github.ref }} and2 @${{ github.head_ref }}
+run-name: Run Unit Test @${{ inputs.deploy_target }} by @${{ github.actor }} and1 @${{ github.ref }} and2 @${{ github.head_ref }}
 
 on:
   workflow_dispatch:
