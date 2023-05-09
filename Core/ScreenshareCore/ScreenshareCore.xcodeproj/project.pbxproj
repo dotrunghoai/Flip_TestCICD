@@ -10,6 +10,7 @@
 		87026F782A09F10B00B710D0 /* ScreenshareCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026F772A09F10B00B710D0 /* ScreenshareCoreTests.swift */; };
 		87026F792A09F10B00B710D0 /* ScreenshareCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026F382A09E78A00B710D0 /* ScreenshareCore.framework */; };
 		87F174FA2A0A184A0002E999 /* EnterURLSwiftUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F174F92A0A184A0002E999 /* EnterURLSwiftUIViewModel.swift */; };
+		87F175022A0A3CA70002E999 /* SocketIO.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F175002A0A3C880002E999 /* SocketIO.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,7 @@
 		87026F752A09F10B00B710D0 /* ScreenshareCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenshareCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87026F772A09F10B00B710D0 /* ScreenshareCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshareCoreTests.swift; sourceTree = "<group>"; };
 		87F174F92A0A184A0002E999 /* EnterURLSwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterURLSwiftUIViewModel.swift; sourceTree = "<group>"; };
+		87F175002A0A3C880002E999 /* SocketIO.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SocketIO.xcframework; path = /Users/ios_1/Documents/DemoRepo/FlipMobile/FlipMobile/../Carthage/Build/SocketIO.xcframework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87F175022A0A3CA70002E999 /* SocketIO.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +57,7 @@
 				87F174F62A0A171D0002E999 /* ScreenshareCore */,
 				87026F762A09F10B00B710D0 /* ScreenshareCoreTests */,
 				87026F392A09E78A00B710D0 /* Products */,
+				87F174FF2A0A3C880002E999 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +84,14 @@
 				87F174F92A0A184A0002E999 /* EnterURLSwiftUIViewModel.swift */,
 			);
 			path = ScreenshareCore;
+			sourceTree = "<group>";
+		};
+		87F174FF2A0A3C880002E999 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87F175002A0A3C880002E999 /* SocketIO.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
