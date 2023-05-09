@@ -3,6 +3,10 @@ run-name: Run Unit Test / UI Test on dev branch
 
 on:
   workflow_dispatch:
+    inputs:
+      isRelease:
+        type: boolean
+        description: is Release to TestFlight
 
 jobs:
   test:
@@ -29,3 +33,6 @@ jobs:
         run: xcodebuild clean test -project TestCICD.xcodeproj -scheme "TestCICDTests" -destination "${destination}" CODE_SIGN_IDENTITY="" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
         env:
           destination: ${{ matrix.destination }}
+      - name: Archive
+        if: ${{ inputs.isRelease }}
+        run: echo ${{ inputs.isRelease }}
