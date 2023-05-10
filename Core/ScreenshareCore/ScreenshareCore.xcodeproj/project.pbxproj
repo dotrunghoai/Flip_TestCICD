@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		87026F782A09F10B00B710D0 /* ScreenshareCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026F772A09F10B00B710D0 /* ScreenshareCoreTests.swift */; };
 		87F174FA2A0A184A0002E999 /* EnterURLSwiftUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F174F92A0A184A0002E999 /* EnterURLSwiftUIViewModel.swift */; };
-		87F1750F2A0B43E10002E999 /* SocketIO.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F175062A0A546D0002E999 /* SocketIO.xcframework */; };
+		87F175192A0B4B370002E999 /* SocketIO.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F175062A0A546D0002E999 /* SocketIO.xcframework */; };
+		87F1751A2A0B4B370002E999 /* SocketIO.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87F175062A0A546D0002E999 /* SocketIO.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,13 +23,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		87F1751B2A0B4B370002E999 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				87F1751A2A0B4B370002E999 /* SocketIO.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		87026F382A09E78A00B710D0 /* ScreenshareCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScreenshareCore.framework; path = "/Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ScreenshareCore/build/Debug-iphoneos/ScreenshareCore.framework"; sourceTree = "<absolute>"; };
 		87026F752A09F10B00B710D0 /* ScreenshareCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ScreenshareCoreTests.xctest; path = "/Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ScreenshareCore/build/Debug-iphoneos/ScreenshareCoreTests.xctest"; sourceTree = "<absolute>"; };
 		87026F772A09F10B00B710D0 /* ScreenshareCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshareCoreTests.swift; sourceTree = "<group>"; };
 		87F174F92A0A184A0002E999 /* EnterURLSwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterURLSwiftUIViewModel.swift; sourceTree = "<group>"; };
 		87F175062A0A546D0002E999 /* SocketIO.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SocketIO.xcframework; path = /Users/ios_1/Documents/DemoRepo/FlipMobile/FlipMobile/../Carthage/Build/SocketIO.xcframework; sourceTree = "<absolute>"; };
 		87F1750D2A0B43C30002E999 /* SocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketIO.framework; path = "../../Carthage/Build/SocketIO.xcframework/ios-arm64/SocketIO.framework"; sourceTree = "<group>"; };
+		87F175152A0B4B1B0002E999 /* ScreenshareCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScreenshareCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87F1750F2A0B43E10002E999 /* SocketIO.xcframework in Frameworks */,
+				87F175192A0B4B370002E999 /* SocketIO.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +71,7 @@
 				87F174F62A0A171D0002E999 /* ScreenshareCore */,
 				87026F762A09F10B00B710D0 /* ScreenshareCoreTests */,
 				87F175052A0A546D0002E999 /* Frameworks */,
+				87F175152A0B4B1B0002E999 /* ScreenshareCore.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +122,7 @@
 				87026F352A09E78A00B710D0 /* Frameworks */,
 				87026F362A09E78A00B710D0 /* Resources */,
 				87F1750B2A0B39840002E999 /* Run Script */,
+				87F1751B2A0B4B370002E999 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -113,7 +130,7 @@
 			);
 			name = ScreenshareCore;
 			productName = ScreenshareCore;
-			productReference = 87026F382A09E78A00B710D0 /* ScreenshareCore.framework */;
+			productReference = 87F175152A0B4B1B0002E999 /* ScreenshareCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		87026F742A09F10B00B710D0 /* ScreenshareCoreTests */ = {
