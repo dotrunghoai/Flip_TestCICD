@@ -8,7 +8,7 @@
 import SocketIO
 
 class EnterURLSwiftUIViewModel {
-//    let socketManager = SocketManager(socketURL: URL(string: "1")!)
+    let socketManager = SocketManager(socketURL: URL(string: "1")!)
     
     func checkUrl() -> Bool {
         return false
