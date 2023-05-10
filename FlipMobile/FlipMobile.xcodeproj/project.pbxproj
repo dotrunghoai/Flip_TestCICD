@@ -17,8 +17,10 @@
 		87026F942A09F16800B710D0 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026F932A09F16800B710D0 /* ReplayKit.framework */; };
 		87026F972A09F16800B710D0 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026F962A09F16800B710D0 /* SampleHandler.swift */; };
 		87026F9B2A09F16800B710D0 /* FlipMobileUploadExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 87026F912A09F16800B710D0 /* FlipMobileUploadExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		87F174FE2A0A1D9B0002E999 /* Starscream.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F174FD2A0A1D9B0002E999 /* Starscream.xcframework */; };
-		87F175042A0A43A80002E999 /* SocketIO.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026FA62A09FF8600B710D0 /* SocketIO.xcframework */; };
+		87F175102A0B462F0002E999 /* SocketIO.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026FA62A09FF8600B710D0 /* SocketIO.xcframework */; };
+		87F175112A0B462F0002E999 /* SocketIO.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87026FA62A09FF8600B710D0 /* SocketIO.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		87F175132A0B46310002E999 /* Starscream.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F174FD2A0A1D9B0002E999 /* Starscream.xcframework */; };
+		87F175142A0B46310002E999 /* Starscream.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87F174FD2A0A1D9B0002E999 /* Starscream.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,18 @@
 				87026F9B2A09F16800B710D0 /* FlipMobileUploadExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F175122A0B462F0002E999 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				87F175142A0B46310002E999 /* Starscream.xcframework in Embed Frameworks */,
+				87F175112A0B462F0002E999 /* SocketIO.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -80,8 +94,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87F175042A0A43A80002E999 /* SocketIO.xcframework in Frameworks */,
-				87F174FE2A0A1D9B0002E999 /* Starscream.xcframework in Frameworks */,
+				87F175132A0B46310002E999 /* Starscream.xcframework in Frameworks */,
+				87F175102A0B462F0002E999 /* SocketIO.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +203,7 @@
 				87026EFE2A09E4CE00B710D0 /* Resources */,
 				87026F9F2A09F16800B710D0 /* Embed Foundation Extensions */,
 				87026FA42A09FEAA00B710D0 /* ShellScript */,
+				87F175122A0B462F0002E999 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
