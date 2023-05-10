@@ -17,7 +17,8 @@
 		87026F942A09F16800B710D0 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026F932A09F16800B710D0 /* ReplayKit.framework */; };
 		87026F972A09F16800B710D0 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026F962A09F16800B710D0 /* SampleHandler.swift */; };
 		87026F9B2A09F16800B710D0 /* FlipMobileUploadExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 87026F912A09F16800B710D0 /* FlipMobileUploadExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		877A1DF32A0B937A003D1E8D /* SnapKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877A1DF22A0B937A003D1E8D /* SnapKit.xcframework */; };
+		877A1DF42A0B964E003D1E8D /* SnapKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877A1DF22A0B937A003D1E8D /* SnapKit.xcframework */; settings = {ATTRIBUTES = (Required, ); }; };
+		877A1DF52A0B964E003D1E8D /* SnapKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 877A1DF22A0B937A003D1E8D /* SnapKit.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				877A1DF52A0B964E003D1E8D /* SnapKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				877A1DF32A0B937A003D1E8D /* SnapKit.xcframework in Frameworks */,
+				877A1DF42A0B964E003D1E8D /* SnapKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +192,6 @@
 				87026EFD2A09E4CE00B710D0 /* Frameworks */,
 				87026EFE2A09E4CE00B710D0 /* Resources */,
 				87026F9F2A09F16800B710D0 /* Embed Foundation Extensions */,
-				87026FA42A09FEAA00B710D0 /* ShellScript */,
 				875927CE2A0B7324007DE2E9 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -306,27 +307,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		87026FA42A09FEAA00B710D0 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/SnapKit.xcframework/ios-arm64/SnapKit.framework",
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# rm -rf ${TMPDIR}TemporaryItems/*carthage*\n# /usr/local/bin/carthage copy-frameworks\n# $(SRCROOT)/Carthage/Build/SnapKit.xcframework/ios-arm64/SnapKit.framework\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		87026EFC2A09E4CE00B710D0 /* Sources */ = {
