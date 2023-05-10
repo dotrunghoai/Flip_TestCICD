@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		87026F782A09F10B00B710D0 /* ScreenshareCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026F772A09F10B00B710D0 /* ScreenshareCoreTests.swift */; };
+		875927BF2A0B5241007DE2E9 /* SnapKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875927BE2A0B5241007DE2E9 /* SnapKit.xcframework */; };
 		87F174FA2A0A184A0002E999 /* EnterURLSwiftUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F174F92A0A184A0002E999 /* EnterURLSwiftUIViewModel.swift */; };
-		87F175192A0B4B370002E999 /* SocketIO.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F175062A0A546D0002E999 /* SocketIO.xcframework */; };
-		87F1751A2A0B4B370002E999 /* SocketIO.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87F175062A0A546D0002E999 /* SocketIO.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,27 +22,12 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		87F1751B2A0B4B370002E999 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				87F1751A2A0B4B370002E999 /* SocketIO.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		87026F752A09F10B00B710D0 /* ScreenshareCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ScreenshareCoreTests.xctest; path = "/Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ScreenshareCore/build/Debug-iphoneos/ScreenshareCoreTests.xctest"; sourceTree = "<absolute>"; };
 		87026F772A09F10B00B710D0 /* ScreenshareCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshareCoreTests.swift; sourceTree = "<group>"; };
+		875927AC2A0B4F17007DE2E9 /* ScreenshareCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ScreenshareCoreTests.xctest; path = "/Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ScreenshareCore/build/Debug-iphoneos/ScreenshareCoreTests.xctest"; sourceTree = "<absolute>"; };
+		875927BC2A0B51E8007DE2E9 /* ScreenshareCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScreenshareCore.framework; path = "/Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ScreenshareCore/build/Debug-iphoneos/ScreenshareCore.framework"; sourceTree = "<absolute>"; };
+		875927BE2A0B5241007DE2E9 /* SnapKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SnapKit.xcframework; path = ../../Carthage/Build/SnapKit.xcframework; sourceTree = "<group>"; };
 		87F174F92A0A184A0002E999 /* EnterURLSwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterURLSwiftUIViewModel.swift; sourceTree = "<group>"; };
-		87F175062A0A546D0002E999 /* SocketIO.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SocketIO.xcframework; path = /Users/ios_1/Documents/DemoRepo/FlipMobile/FlipMobile/../Carthage/Build/SocketIO.xcframework; sourceTree = "<absolute>"; };
-		87F1750D2A0B43C30002E999 /* SocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketIO.framework; path = "../../Carthage/Build/SocketIO.xcframework/ios-arm64/SocketIO.framework"; sourceTree = "<group>"; };
-		87F175152A0B4B1B0002E999 /* ScreenshareCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScreenshareCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87F175192A0B4B370002E999 /* SocketIO.xcframework in Frameworks */,
+				875927BF2A0B5241007DE2E9 /* SnapKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,8 +54,7 @@
 			children = (
 				87F174F62A0A171D0002E999 /* ScreenshareCore */,
 				87026F762A09F10B00B710D0 /* ScreenshareCoreTests */,
-				87F175052A0A546D0002E999 /* Frameworks */,
-				87F175152A0B4B1B0002E999 /* ScreenshareCore.framework */,
+				875927BD2A0B5241007DE2E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,21 +66,20 @@
 			path = ScreenshareCoreTests;
 			sourceTree = "<group>";
 		};
+		875927BD2A0B5241007DE2E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				875927BE2A0B5241007DE2E9 /* SnapKit.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		87F174F62A0A171D0002E999 /* ScreenshareCore */ = {
 			isa = PBXGroup;
 			children = (
 				87F174F92A0A184A0002E999 /* EnterURLSwiftUIViewModel.swift */,
 			);
 			path = ScreenshareCore;
-			sourceTree = "<group>";
-		};
-		87F175052A0A546D0002E999 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				87F1750D2A0B43C30002E999 /* SocketIO.framework */,
-				87F175062A0A546D0002E999 /* SocketIO.xcframework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,15 +104,16 @@
 				87026F352A09E78A00B710D0 /* Frameworks */,
 				87026F362A09E78A00B710D0 /* Resources */,
 				87F1750B2A0B39840002E999 /* Run Script */,
-				87F1751B2A0B4B370002E999 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ScreenshareCore;
+			packageProductDependencies = (
+			);
 			productName = ScreenshareCore;
-			productReference = 87F175152A0B4B1B0002E999 /* ScreenshareCore.framework */;
+			productReference = 875927BC2A0B51E8007DE2E9 /* ScreenshareCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		87026F742A09F10B00B710D0 /* ScreenshareCoreTests */ = {
@@ -148,7 +131,7 @@
 			);
 			name = ScreenshareCoreTests;
 			productName = ScreenshareCoreTests;
-			productReference = 87026F752A09F10B00B710D0 /* ScreenshareCoreTests.xctest */;
+			productReference = 875927AC2A0B4F17007DE2E9 /* ScreenshareCoreTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -215,7 +198,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/SocketIO.xcframework/ios-arm64/SocketIO.framework",
+				"$(SRCROOT)/Carthage/Build/SnapKit.xcframework/ios-arm64/SnapKit.framework",
 			);
 			name = "Run Script";
 			outputFileListPaths = (

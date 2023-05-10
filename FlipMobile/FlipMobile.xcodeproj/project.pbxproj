@@ -17,8 +17,6 @@
 		87026F942A09F16800B710D0 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026F932A09F16800B710D0 /* ReplayKit.framework */; };
 		87026F972A09F16800B710D0 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026F962A09F16800B710D0 /* SampleHandler.swift */; };
 		87026F9B2A09F16800B710D0 /* FlipMobileUploadExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 87026F912A09F16800B710D0 /* FlipMobileUploadExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		87F175102A0B462F0002E999 /* SocketIO.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026FA62A09FF8600B710D0 /* SocketIO.xcframework */; };
-		87F175132A0B46310002E999 /* Starscream.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F174FD2A0A1D9B0002E999 /* Starscream.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +70,12 @@
 		87026FA52A09FF8600B710D0 /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Nimble.xcframework; path = ../Carthage/Build/Nimble.xcframework; sourceTree = "<group>"; };
 		87026FA62A09FF8600B710D0 /* SocketIO.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SocketIO.xcframework; path = ../Carthage/Build/SocketIO.xcframework; sourceTree = "<group>"; };
 		87026FA72A09FF8600B710D0 /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Quick.xcframework; path = ../Carthage/Build/Quick.xcframework; sourceTree = "<group>"; };
+		875927AE2A0B4F28007DE2E9 /* AMSMB2.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = AMSMB2.framework.dSYM; sourceTree = "<group>"; };
+		875927AF2A0B4F28007DE2E9 /* AMSMB2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMSMB2.framework; sourceTree = "<group>"; };
+		875927B02A0B4FE1007DE2E9 /* AMSMB2 */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AMSMB2; path = ../Carthage/Checkouts/AMSMB2; sourceTree = "<group>"; };
 		87F174FD2A0A1D9B0002E999 /* Starscream.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Starscream.xcframework; path = ../Carthage/Build/Starscream.xcframework; sourceTree = "<group>"; };
+		87F1751D2A0B4EB80002E999 /* AMSMB2.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = AMSMB2.framework.dSYM; sourceTree = "<group>"; };
+		87F1751E2A0B4EB80002E999 /* AMSMB2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMSMB2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +83,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87F175132A0B46310002E999 /* Starscream.xcframework in Frameworks */,
-				87F175102A0B462F0002E999 /* SocketIO.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +151,9 @@
 		87026F922A09F16800B710D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				875927B02A0B4FE1007DE2E9 /* AMSMB2 */,
+				87F1751C2A0B4EB80002E999 /* Mac */,
+				875927AD2A0B4F28007DE2E9 /* Mac */,
 				87F174FD2A0A1D9B0002E999 /* Starscream.xcframework */,
 				87026FA52A09FF8600B710D0 /* Nimble.xcframework */,
 				87026FA72A09FF8600B710D0 /* Quick.xcframework */,
@@ -175,6 +179,26 @@
 				87026FA22A09FD6D00B710D0 /* AppStore.xcconfig */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		875927AD2A0B4F28007DE2E9 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				875927AE2A0B4F28007DE2E9 /* AMSMB2.framework.dSYM */,
+				875927AF2A0B4F28007DE2E9 /* AMSMB2.framework */,
+			);
+			name = Mac;
+			path = ../Carthage/Build/Mac;
+			sourceTree = "<group>";
+		};
+		87F1751C2A0B4EB80002E999 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				87F1751D2A0B4EB80002E999 /* AMSMB2.framework.dSYM */,
+				87F1751E2A0B4EB80002E999 /* AMSMB2.framework */,
+			);
+			name = Mac;
+			path = ../Carthage/Build/Mac;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,7 +337,6 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/SocketIO.xcframework/ios-arm64/SocketIO.framework",
 			);
 			outputFileListPaths = (
 			);
