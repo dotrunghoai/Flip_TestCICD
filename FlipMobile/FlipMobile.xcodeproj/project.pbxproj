@@ -17,7 +17,8 @@
 		87026F942A09F16800B710D0 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026F932A09F16800B710D0 /* ReplayKit.framework */; };
 		87026F972A09F16800B710D0 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026F962A09F16800B710D0 /* SampleHandler.swift */; };
 		87026F9B2A09F16800B710D0 /* FlipMobileUploadExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 87026F912A09F16800B710D0 /* FlipMobileUploadExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		875927C12A0B68D0007DE2E9 /* SnapKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875927C02A0B68D0007DE2E9 /* SnapKit.xcframework */; };
+		875927C62A0B7024007DE2E9 /* SnapKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875927C02A0B68D0007DE2E9 /* SnapKit.xcframework */; };
+		875927C72A0B7024007DE2E9 /* SnapKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 875927C02A0B68D0007DE2E9 /* SnapKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,17 @@
 				87026F9B2A09F16800B710D0 /* FlipMobileUploadExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		875927C82A0B7025007DE2E9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				875927C72A0B7024007DE2E9 /* SnapKit.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -85,7 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				875927C12A0B68D0007DE2E9 /* SnapKit.xcframework in Frameworks */,
+				875927C62A0B7024007DE2E9 /* SnapKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +229,7 @@
 				87026EFE2A09E4CE00B710D0 /* Resources */,
 				87026F9F2A09F16800B710D0 /* Embed Foundation Extensions */,
 				87026FA42A09FEAA00B710D0 /* ShellScript */,
+				875927C82A0B7025007DE2E9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
