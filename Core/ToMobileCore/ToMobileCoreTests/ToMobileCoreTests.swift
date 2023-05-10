@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import Nimble
 
 final class ToMobileCoreTests: XCTestCase {
 
@@ -19,6 +20,7 @@ final class ToMobileCoreTests: XCTestCase {
 
     func testExample() throws {
         XCTAssertEqual(4 + 4, 8)
+        expect(1).to(equal(3))
     }
 
     func testPerformanceExample() throws {
