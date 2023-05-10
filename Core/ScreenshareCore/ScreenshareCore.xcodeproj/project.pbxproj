@@ -186,6 +186,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/SnapKit.xcframework/ios-arm64/SnapKit.framework",
 			);
 			outputFileListPaths = (
 			);
