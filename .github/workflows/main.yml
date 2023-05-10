@@ -25,22 +25,22 @@ jobs:
         run: carthage update --platform iOS --no-use-binaries --use-xcframeworks
       - name: Run Script Build Carthage
         run: bash carthage-build.sh build --platform iOS --use-xcframeworks
-      # - name: Build
-      #   run: xcodebuild clean build -workspace Flip.xcworkspace -scheme "FlipMobile Debug" -destination "${destination}" CODE_SIGN_IDENTITY="" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
-      #   env:
-      #     destination: ${{ matrix.destination }}
-      - name: ScreenshareCoreTests
-        run: xcodebuild clean build test -workspace Flip.xcworkspace -scheme "ScreenshareCoreTests" -destination "${destination}" CODE_SIGN_IDENTITY="" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
+      - name: Build
+        run: xcodebuild clean build -workspace Flip.xcworkspace -scheme "FlipMobile Debug" -destination "${destination}" CODE_SIGN_IDENTITY="" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
         env:
           destination: ${{ matrix.destination }}
-      # - name: FlipMobileTests
-      #   run: xcodebuild clean test -workspace Flip.xcworkspace -scheme "FlipMobileTests" -destination "${destination}" CODE_SIGN_IDENTITY="" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
-      #   env:
-      #     destination: ${{ matrix.destination }}
       # - name: CommonCoreTests
       #   run: xcodebuild clean test -workspace Flip.xcworkspace -scheme "CommonCoreTests" -destination "${destination}" CODE_SIGN_IDENTITY="" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
       #   env:
       #     destination: ${{ matrix.destination }}
+      # - name: FlipMobileTests
+      #   run: xcodebuild clean test -workspace Flip.xcworkspace -scheme "FlipMobileTests" -destination "${destination}" CODE_SIGN_IDENTITY="" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
+      #   env:
+      #     destination: ${{ matrix.destination }}
+      - name: ScreenshareCoreTests
+        run: xcodebuild clean test -workspace Flip.xcworkspace -scheme "ScreenshareCoreTests" -destination "${destination}" CODE_SIGN_IDENTITY="" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
+        env:
+          destination: ${{ matrix.destination }}
       # - name: ToMobileCoreTests
       #   run: xcodebuild clean test -workspace Flip.xcworkspace -scheme "ToMobileCoreTests" -destination "${destination}" CODE_SIGN_IDENTITY="" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
       #   env:
