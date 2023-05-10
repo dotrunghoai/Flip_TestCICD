@@ -25,7 +25,6 @@
 		87026F772A09F10B00B710D0 /* ScreenshareCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshareCoreTests.swift; sourceTree = "<group>"; };
 		875927AC2A0B4F17007DE2E9 /* ScreenshareCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ScreenshareCoreTests.xctest; path = "/Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ScreenshareCore/build/Debug-iphoneos/ScreenshareCoreTests.xctest"; sourceTree = "<absolute>"; };
 		875927BC2A0B51E8007DE2E9 /* ScreenshareCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScreenshareCore.framework; path = "/Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ScreenshareCore/build/Debug-iphoneos/ScreenshareCore.framework"; sourceTree = "<absolute>"; };
-		875927BE2A0B5241007DE2E9 /* SnapKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SnapKit.xcframework; path = ../../Carthage/Build/SnapKit.xcframework; sourceTree = "<group>"; };
 		87F174F92A0A184A0002E999 /* EnterURLSwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterURLSwiftUIViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,7 +51,6 @@
 			children = (
 				87F174F62A0A171D0002E999 /* ScreenshareCore */,
 				87026F762A09F10B00B710D0 /* ScreenshareCoreTests */,
-				875927BD2A0B5241007DE2E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,14 +60,6 @@
 				87026F772A09F10B00B710D0 /* ScreenshareCoreTests.swift */,
 			);
 			path = ScreenshareCoreTests;
-			sourceTree = "<group>";
-		};
-		875927BD2A0B5241007DE2E9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				875927BE2A0B5241007DE2E9 /* SnapKit.xcframework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		87F174F62A0A171D0002E999 /* ScreenshareCore */ = {
