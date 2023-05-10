@@ -91,7 +91,6 @@
 				87026F342A09E78A00B710D0 /* Sources */,
 				87026F352A09E78A00B710D0 /* Frameworks */,
 				87026F362A09E78A00B710D0 /* Resources */,
-				875927C52A0B6F0A007DE2E9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -176,27 +175,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		875927C52A0B6F0A007DE2E9 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/SnapKit.xcframework/ios-arm64/SnapKit.framework",
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		87026F342A09E78A00B710D0 /* Sources */ = {

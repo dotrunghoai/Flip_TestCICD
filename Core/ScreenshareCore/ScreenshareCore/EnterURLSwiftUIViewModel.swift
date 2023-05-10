@@ -6,11 +6,22 @@
 //
 
 import SnapKit
+import UIKit
 
-class EnterURLSwiftUIViewModel {
+class EnterURLSwiftUIViewModel: UIViewController {
 //    let socketManager = SocketManager(socketURL: URL(string: "1")!)
     
     func checkUrl() -> Bool {
         return false
+    }
+    
+    func testSnapKit() {
+        let childView = UIView()
+        childView.backgroundColor = .red
+        self.view.addSubview(childView)
+        
+        childView.snp.makeConstraints { (make) in
+          make.top.bottom.left.right.equalTo(self.view)
+        }
     }
 }
