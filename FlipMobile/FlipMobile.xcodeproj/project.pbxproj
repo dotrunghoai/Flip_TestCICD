@@ -80,16 +80,7 @@
 		87026F982A09F16800B710D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87026FA12A09FD5800B710D0 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		87026FA22A09FD6D00B710D0 /* AppStore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppStore.xcconfig; sourceTree = "<group>"; };
-		87026FA52A09FF8600B710D0 /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Nimble.xcframework; path = ../Carthage/Build/Nimble.xcframework; sourceTree = "<group>"; };
-		87026FA62A09FF8600B710D0 /* SocketIO.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SocketIO.xcframework; path = ../Carthage/Build/SocketIO.xcframework; sourceTree = "<group>"; };
-		87026FA72A09FF8600B710D0 /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Quick.xcframework; path = ../Carthage/Build/Quick.xcframework; sourceTree = "<group>"; };
-		875927AE2A0B4F28007DE2E9 /* AMSMB2.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = AMSMB2.framework.dSYM; sourceTree = "<group>"; };
-		875927AF2A0B4F28007DE2E9 /* AMSMB2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMSMB2.framework; sourceTree = "<group>"; };
-		875927B02A0B4FE1007DE2E9 /* AMSMB2 */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AMSMB2; path = ../Carthage/Checkouts/AMSMB2; sourceTree = "<group>"; };
 		875927C02A0B68D0007DE2E9 /* SnapKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SnapKit.xcframework; path = /Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ScreenshareCore/../../Carthage/Build/SnapKit.xcframework; sourceTree = "<absolute>"; };
-		87F174FD2A0A1D9B0002E999 /* Starscream.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Starscream.xcframework; path = ../Carthage/Build/Starscream.xcframework; sourceTree = "<group>"; };
-		87F1751D2A0B4EB80002E999 /* AMSMB2.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = AMSMB2.framework.dSYM; sourceTree = "<group>"; };
-		87F1751E2A0B4EB80002E999 /* AMSMB2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMSMB2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,13 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				875927C02A0B68D0007DE2E9 /* SnapKit.xcframework */,
-				875927B02A0B4FE1007DE2E9 /* AMSMB2 */,
-				87F1751C2A0B4EB80002E999 /* Mac */,
-				875927AD2A0B4F28007DE2E9 /* Mac */,
-				87F174FD2A0A1D9B0002E999 /* Starscream.xcframework */,
-				87026FA52A09FF8600B710D0 /* Nimble.xcframework */,
-				87026FA72A09FF8600B710D0 /* Quick.xcframework */,
-				87026FA62A09FF8600B710D0 /* SocketIO.xcframework */,
 				87026F932A09F16800B710D0 /* ReplayKit.framework */,
 			);
 			name = Frameworks;
@@ -195,26 +179,6 @@
 				87026FA22A09FD6D00B710D0 /* AppStore.xcconfig */,
 			);
 			path = Config;
-			sourceTree = "<group>";
-		};
-		875927AD2A0B4F28007DE2E9 /* Mac */ = {
-			isa = PBXGroup;
-			children = (
-				875927AE2A0B4F28007DE2E9 /* AMSMB2.framework.dSYM */,
-				875927AF2A0B4F28007DE2E9 /* AMSMB2.framework */,
-			);
-			name = Mac;
-			path = ../Carthage/Build/Mac;
-			sourceTree = "<group>";
-		};
-		87F1751C2A0B4EB80002E999 /* Mac */ = {
-			isa = PBXGroup;
-			children = (
-				87F1751D2A0B4EB80002E999 /* AMSMB2.framework.dSYM */,
-				87F1751E2A0B4EB80002E999 /* AMSMB2.framework */,
-			);
-			name = Mac;
-			path = ../Carthage/Build/Mac;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +318,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/SnapKit.xcframework/ios-arm64/SnapKit.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -361,7 +326,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "rm -rf ${TMPDIR}TemporaryItems/*carthage*\n/usr/local/bin/carthage copy-frameworks\n";
+			shellScript = "# rm -rf ${TMPDIR}TemporaryItems/*carthage*\n# /usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
