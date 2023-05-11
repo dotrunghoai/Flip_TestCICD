@@ -7,6 +7,7 @@
 
 import XCTest
 import SocketIO
+import AMSMB2
 //import Nimble
 //import Quick
 

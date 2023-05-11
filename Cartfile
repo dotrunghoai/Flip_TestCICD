@@ -1,5 +1,5 @@
 github "socketio/socket.io-client-swift" ~> 16.0.1
-# github "amosavian/AMSMB2"
+github "amosavian/AMSMB2"
 # github "ashleymills/Reachability.swift"
 # github "airbnb/lottie-ios" "master"
 # github "Quick/Quick" ~> 6.1.0
