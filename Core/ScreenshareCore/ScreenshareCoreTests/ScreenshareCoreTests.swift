@@ -6,7 +6,7 @@
 //
 
 import XCTest
-//import Quick
+import SocketIO
 
 final class ScreenshareCoreTests: XCTestCase {
 
