@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import SocketIO
 //import Nimble
 //import Quick
 
