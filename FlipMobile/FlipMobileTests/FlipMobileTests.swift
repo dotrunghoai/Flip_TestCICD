@@ -6,8 +6,8 @@
 //
 
 import XCTest
-import Nimble
-import Quick
+//import Nimble
+//import Quick
 
 final class FlipMobileTests: XCTestCase {
 
@@ -21,7 +21,7 @@ final class FlipMobileTests: XCTestCase {
 
     func testExample() throws {
         XCTAssertEqual(1 + 1, 2)
-        expect(3).to(equal(3))
+//        expect(3).to(equal(3))
     }
 
     func testPerformanceExample() throws {

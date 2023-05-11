@@ -6,13 +6,13 @@
 //
 
 import UIKit
-import SocketIO
+//import SocketIO
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let socketManager = SocketManager(socketURL: URL(string: "1")!)
+//        let socketManager = SocketManager(socketURL: URL(string: "1")!)
     }
 
 

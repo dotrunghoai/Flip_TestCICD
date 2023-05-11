@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		87026F6A2A09F0E000B710D0 /* ToMobileCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026F692A09F0E000B710D0 /* ToMobileCoreTests.swift */; };
-		87026F6B2A09F0E000B710D0 /* ToMobileCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026F4C2A09E7E700B710D0 /* ToMobileCore.framework */; };
 		87F174FC2A0A1BEA0002E999 /* ExportGuideSwiftUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F174FB2A0A1BEA0002E999 /* ExportGuideSwiftUIViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +40,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87026F6B2A09F0E000B710D0 /* ToMobileCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

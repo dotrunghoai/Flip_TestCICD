@@ -17,18 +17,6 @@
 		87026F942A09F16800B710D0 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026F932A09F16800B710D0 /* ReplayKit.framework */; };
 		87026F972A09F16800B710D0 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026F962A09F16800B710D0 /* SampleHandler.swift */; };
 		87026F9B2A09F16800B710D0 /* FlipMobileUploadExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 87026F912A09F16800B710D0 /* FlipMobileUploadExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		8755ADB92A0C991A00C8E31B /* SocketIO.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877A1DF62A0B9EB2003D1E8D /* SocketIO.xcframework */; };
-		8755ADBA2A0C9A7200C8E31B /* Quick.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 873536D82A0BA81300CE7D44 /* Quick.xcframework */; };
-		877A1E072A0B9EF4003D1E8D /* AMSMB2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877A1DFE2A0B9EB4003D1E8D /* AMSMB2.xcframework */; };
-		877A1E082A0B9EF4003D1E8D /* AMSMB2.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 877A1DFE2A0B9EB4003D1E8D /* AMSMB2.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		877A1E092A0B9EF9003D1E8D /* Lottie.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877A1DF82A0B9EB3003D1E8D /* Lottie.xcframework */; };
-		877A1E0A2A0B9EFA003D1E8D /* Lottie.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 877A1DF82A0B9EB3003D1E8D /* Lottie.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		877A1E0B2A0B9EFC003D1E8D /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877A1DFF2A0B9EB5003D1E8D /* Nimble.xcframework */; };
-		877A1E0C2A0B9EFC003D1E8D /* Nimble.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 877A1DFF2A0B9EB5003D1E8D /* Nimble.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		877A1E0F2A0B9F01003D1E8D /* Reachability.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877A1DF72A0B9EB3003D1E8D /* Reachability.xcframework */; };
-		877A1E102A0B9F02003D1E8D /* Reachability.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 877A1DF72A0B9EB3003D1E8D /* Reachability.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		877A1E132A0B9F41003D1E8D /* Starscream.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877A1DFD2A0B9EB4003D1E8D /* Starscream.xcframework */; };
-		877A1E142A0B9F42003D1E8D /* Starscream.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 877A1DFD2A0B9EB4003D1E8D /* Starscream.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,21 +48,6 @@
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		875927CE2A0B7324007DE2E9 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				877A1E0C2A0B9EFC003D1E8D /* Nimble.xcframework in Embed Frameworks */,
-				877A1E102A0B9F02003D1E8D /* Reachability.xcframework in Embed Frameworks */,
-				877A1E142A0B9F42003D1E8D /* Starscream.xcframework in Embed Frameworks */,
-				877A1E0A2A0B9EFA003D1E8D /* Lottie.xcframework in Embed Frameworks */,
-				877A1E082A0B9EF4003D1E8D /* AMSMB2.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -94,15 +67,6 @@
 		87026F982A09F16800B710D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87026FA12A09FD5800B710D0 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		87026FA22A09FD6D00B710D0 /* AppStore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppStore.xcconfig; sourceTree = "<group>"; };
-		873536D82A0BA81300CE7D44 /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Quick.xcframework; path = ../Carthage/Build/Quick.xcframework; sourceTree = "<group>"; };
-		877A1DF62A0B9EB2003D1E8D /* SocketIO.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SocketIO.xcframework; path = ../Carthage/Build/SocketIO.xcframework; sourceTree = "<group>"; };
-		877A1DF72A0B9EB3003D1E8D /* Reachability.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Reachability.xcframework; path = ../Carthage/Build/Reachability.xcframework; sourceTree = "<group>"; };
-		877A1DF82A0B9EB3003D1E8D /* Lottie.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Lottie.xcframework; path = ../Carthage/Build/Lottie.xcframework; sourceTree = "<group>"; };
-		877A1DFB2A0B9EB4003D1E8D /* AMSMB2.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = AMSMB2.framework.dSYM; sourceTree = "<group>"; };
-		877A1DFC2A0B9EB4003D1E8D /* AMSMB2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMSMB2.framework; sourceTree = "<group>"; };
-		877A1DFD2A0B9EB4003D1E8D /* Starscream.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Starscream.xcframework; path = ../Carthage/Build/Starscream.xcframework; sourceTree = "<group>"; };
-		877A1DFE2A0B9EB4003D1E8D /* AMSMB2.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AMSMB2.xcframework; path = ../Carthage/Build/AMSMB2.xcframework; sourceTree = "<group>"; };
-		877A1DFF2A0B9EB5003D1E8D /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Nimble.xcframework; path = ../Carthage/Build/Nimble.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,12 +74,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8755ADB92A0C991A00C8E31B /* SocketIO.xcframework in Frameworks */,
-				877A1E092A0B9EF9003D1E8D /* Lottie.xcframework in Frameworks */,
-				877A1E0F2A0B9F01003D1E8D /* Reachability.xcframework in Frameworks */,
-				877A1E072A0B9EF4003D1E8D /* AMSMB2.xcframework in Frameworks */,
-				877A1E132A0B9F41003D1E8D /* Starscream.xcframework in Frameworks */,
-				877A1E0B2A0B9EFC003D1E8D /* Nimble.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +81,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8755ADBA2A0C9A7200C8E31B /* Quick.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,14 +142,6 @@
 		87026F922A09F16800B710D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				873536D82A0BA81300CE7D44 /* Quick.xcframework */,
-				877A1DFE2A0B9EB4003D1E8D /* AMSMB2.xcframework */,
-				877A1DF82A0B9EB3003D1E8D /* Lottie.xcframework */,
-				877A1DFA2A0B9EB4003D1E8D /* Mac */,
-				877A1DFF2A0B9EB5003D1E8D /* Nimble.xcframework */,
-				877A1DF72A0B9EB3003D1E8D /* Reachability.xcframework */,
-				877A1DF62A0B9EB2003D1E8D /* SocketIO.xcframework */,
-				877A1DFD2A0B9EB4003D1E8D /* Starscream.xcframework */,
 				87026F932A09F16800B710D0 /* ReplayKit.framework */,
 			);
 			name = Frameworks;
@@ -216,16 +165,6 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
-		877A1DFA2A0B9EB4003D1E8D /* Mac */ = {
-			isa = PBXGroup;
-			children = (
-				877A1DFB2A0B9EB4003D1E8D /* AMSMB2.framework.dSYM */,
-				877A1DFC2A0B9EB4003D1E8D /* AMSMB2.framework */,
-			);
-			name = Mac;
-			path = ../Carthage/Build/Mac;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,8 +176,6 @@
 				87026EFD2A09E4CE00B710D0 /* Frameworks */,
 				87026EFE2A09E4CE00B710D0 /* Resources */,
 				87026F9F2A09F16800B710D0 /* Embed Foundation Extensions */,
-				875927CE2A0B7324007DE2E9 /* Embed Frameworks */,
-				873536DC2A0C8FF600CE7D44 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -353,27 +290,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		873536DC2A0C8FF600CE7D44 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/Lottie.xcframework/ios-arm64/Lottie.framework",
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# /usr/local/bin/carthage copy-frameworks\n# $(SRCROOT)/Carthage/Build/Quick.xcframework/ios-arm64/Quick.framework\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		87026EFC2A09E4CE00B710D0 /* Sources */ = {
