@@ -365,6 +365,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Lottie.xcframework/ios-arm64/Lottie.framework",
 			);
 			outputFileListPaths = (
 			);

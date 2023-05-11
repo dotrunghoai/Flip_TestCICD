@@ -6,10 +6,10 @@
 //
 
 import Foundation
-import Lottie
+//import Lottie
 
 class ExportGuideSwiftUIViewModel {
     init() {
-        let view = LottieAnimationView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+//        let view = LottieAnimationView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
     }
 }
