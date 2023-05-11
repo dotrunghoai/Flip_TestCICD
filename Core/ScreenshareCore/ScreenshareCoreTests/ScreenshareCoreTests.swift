@@ -6,7 +6,7 @@
 //
 
 import XCTest
-//import Quick
+import Quick
 
 final class ScreenshareCoreTests: XCTestCase {
 
