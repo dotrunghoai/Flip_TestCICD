@@ -15,7 +15,5 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 //        let socketManager = SocketManager(socketURL: URL(string: "1")!)
     }
-
-
 }
 
