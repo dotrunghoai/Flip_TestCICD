@@ -6,7 +6,7 @@
 //
 
 import XCTest
-import SocketIO
+//import SocketIO
 
 final class CommonCoreTests: XCTestCase {
 

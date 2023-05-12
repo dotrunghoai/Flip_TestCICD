@@ -6,7 +6,7 @@
 //
 
 import XCTest
-import SocketIO
+//import SocketIO
 //import Nimble
 
 final class ToMobileCoreTests: XCTestCase {

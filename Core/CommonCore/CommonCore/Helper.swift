@@ -6,11 +6,11 @@
 //
 
 import Foundation
-import SocketIO
+//import SocketIO
 
 class Helper {
     init() {
-        let socketManagerCM = SocketManager(socketURL: URL(string: "1")!)
-        print(socketManagerCM)
+//        let socketManagerCM = SocketManager(socketURL: URL(string: "1")!)
+//        print(socketManagerCM)
     }
 }
