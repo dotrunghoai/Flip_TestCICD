@@ -17,7 +17,6 @@
 		87026F942A09F16800B710D0 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026F932A09F16800B710D0 /* ReplayKit.framework */; };
 		87026F972A09F16800B710D0 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026F962A09F16800B710D0 /* SampleHandler.swift */; };
 		87026F9B2A09F16800B710D0 /* FlipMobileUploadExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 87026F912A09F16800B710D0 /* FlipMobileUploadExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		87C61AA62A0DE36100EF34EF /* AMSMB2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C61AA52A0DE36100EF34EF /* AMSMB2.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +67,6 @@
 		87026F982A09F16800B710D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87026FA12A09FD5800B710D0 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		87026FA22A09FD6D00B710D0 /* AppStore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppStore.xcconfig; sourceTree = "<group>"; };
-		87C61AA52A0DE36100EF34EF /* AMSMB2.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AMSMB2.xcframework; path = ../Carthage/Build/AMSMB2.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +74,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87C61AA62A0DE36100EF34EF /* AMSMB2.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +142,6 @@
 		87026F922A09F16800B710D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				87C61AA52A0DE36100EF34EF /* AMSMB2.xcframework */,
 				87026F932A09F16800B710D0 /* ReplayKit.framework */,
 			);
 			name = Frameworks;
