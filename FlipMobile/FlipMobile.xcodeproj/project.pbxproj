@@ -19,7 +19,6 @@
 		87026F9B2A09F16800B710D0 /* FlipMobileUploadExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 87026F912A09F16800B710D0 /* FlipMobileUploadExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		87C61AA02A0CDFC200EF34EF /* SocketIO.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C61A9F2A0CDFC200EF34EF /* SocketIO.xcframework */; };
 		87C61AA22A0CE6D500EF34EF /* Starscream.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C61AA12A0CE6D500EF34EF /* Starscream.xcframework */; };
-		87C61AA42A0CF74A00EF34EF /* AMSMB2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C61AA32A0CF74A00EF34EF /* AMSMB2.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +71,6 @@
 		87026FA22A09FD6D00B710D0 /* AppStore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppStore.xcconfig; sourceTree = "<group>"; };
 		87C61A9F2A0CDFC200EF34EF /* SocketIO.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SocketIO.xcframework; path = ../Carthage/Build/SocketIO.xcframework; sourceTree = "<group>"; };
 		87C61AA12A0CE6D500EF34EF /* Starscream.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Starscream.xcframework; path = ../Carthage/Build/Starscream.xcframework; sourceTree = "<group>"; };
-		87C61AA32A0CF74A00EF34EF /* AMSMB2.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AMSMB2.xcframework; path = ../Carthage/Build/AMSMB2.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87C61AA42A0CF74A00EF34EF /* AMSMB2.xcframework in Frameworks */,
 				87C61AA22A0CE6D500EF34EF /* Starscream.xcframework in Frameworks */,
 				87C61AA02A0CDFC200EF34EF /* SocketIO.xcframework in Frameworks */,
 			);
@@ -151,7 +148,6 @@
 		87026F922A09F16800B710D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				87C61AA32A0CF74A00EF34EF /* AMSMB2.xcframework */,
 				87C61AA12A0CE6D500EF34EF /* Starscream.xcframework */,
 				87C61A9F2A0CDFC200EF34EF /* SocketIO.xcframework */,
 				87026F932A09F16800B710D0 /* ReplayKit.framework */,
