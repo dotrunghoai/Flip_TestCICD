@@ -30,12 +30,12 @@ jobs:
         env:
           destination: ${{ matrix.destination }}
       - name: Test
-        run: xcodebuild \
-            -scheme "FlipMobile Debug" \
-            -sdk iphonesimulator \
-            -destination "${destination}" \
-            test
-        # run: xcodebuild clean test -workspace Flip.xcworkspace -scheme "FlipMobile Debug" -destination "${destination}" CODE_SIGN_IDENTITY="" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
+        # run: xcodebuild \
+        #     -scheme "FlipMobile Debug" \
+        #     -sdk iphonesimulator \
+        #     -destination "${destination}" \
+        #     test
+        run: xcodebuild clean test -workspace Flip.xcworkspace -scheme "FlipMobile Debug" -destination "${destination}" CODE_SIGN_IDENTITY="" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
         env:
           destination: ${{ matrix.destination }}
       - name: Archive
