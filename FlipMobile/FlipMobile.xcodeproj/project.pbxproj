@@ -17,8 +17,8 @@
 		87026F942A09F16800B710D0 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87026F932A09F16800B710D0 /* ReplayKit.framework */; };
 		87026F972A09F16800B710D0 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026F962A09F16800B710D0 /* SampleHandler.swift */; };
 		87026F9B2A09F16800B710D0 /* FlipMobileUploadExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 87026F912A09F16800B710D0 /* FlipMobileUploadExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		87C61AA92A0DEFA700EF34EF /* AMSMB2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C61AA72A0DEF9500EF34EF /* AMSMB2.xcframework */; };
-		87C61AAA2A0DEFA700EF34EF /* AMSMB2.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87C61AA72A0DEF9500EF34EF /* AMSMB2.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		87C61AAE2A1237DE00EF34EF /* AMSMB2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C61AA72A0DEF9500EF34EF /* AMSMB2.xcframework */; };
+		87C61AAF2A1237DE00EF34EF /* AMSMB2.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87C61AA72A0DEF9500EF34EF /* AMSMB2.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,13 +50,13 @@
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		87C61AAB2A0DEFA700EF34EF /* Embed Frameworks */ = {
+		87C61AB02A1237DF00EF34EF /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				87C61AAA2A0DEFA700EF34EF /* AMSMB2.xcframework in Embed Frameworks */,
+				87C61AAF2A1237DE00EF34EF /* AMSMB2.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87C61AA92A0DEFA700EF34EF /* AMSMB2.xcframework in Frameworks */,
+				87C61AAE2A1237DE00EF34EF /* AMSMB2.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,8 +192,8 @@
 				87026EFD2A09E4CE00B710D0 /* Frameworks */,
 				87026EFE2A09E4CE00B710D0 /* Resources */,
 				87026F9F2A09F16800B710D0 /* Embed Foundation Extensions */,
-				87C61AAB2A0DEFA700EF34EF /* Embed Frameworks */,
 				87C61AAD2A0E341100EF34EF /* ShellScript */,
+				87C61AB02A1237DF00EF34EF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
