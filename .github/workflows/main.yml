@@ -31,7 +31,7 @@ jobs:
           destination: ${{ matrix.destination }}
       - name: Test
         run: xcodebuild \
-            -target "FlipMobile Debug" \
+            -scheme "FlipMobile Debug" \
             -sdk iphonesimulator \
             -destination "${destination}" \
             test
