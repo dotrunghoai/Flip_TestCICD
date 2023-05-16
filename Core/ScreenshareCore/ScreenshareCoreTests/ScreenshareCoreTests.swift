@@ -6,7 +6,10 @@
 //
 
 import XCTest
-//import SocketIO
+import SocketIO
+import AMSMB2
+import Nimble
+import Quick
 
 final class ScreenshareCoreTests: XCTestCase {
 
@@ -20,6 +23,7 @@ final class ScreenshareCoreTests: XCTestCase {
 
     func testExample() throws {
         XCTAssertEqual(3 + 3, 6)
+        expect(4).to(equal(4))
     }
 
     func testPerformanceExample() throws {

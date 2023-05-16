@@ -23,8 +23,8 @@
 
 /* Begin PBXFileReference section */
 		87026F772A09F10B00B710D0 /* ScreenshareCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshareCoreTests.swift; sourceTree = "<group>"; };
-		87C61A9B2A0CD14F00EF34EF /* ScreenshareCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScreenshareCore.framework; path = "/Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ScreenshareCore/build/Debug-iphoneos/ScreenshareCore.framework"; sourceTree = "<absolute>"; };
-		87C61A9C2A0CD14F00EF34EF /* ScreenshareCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ScreenshareCoreTests.xctest; path = "/Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ScreenshareCore/build/Debug-iphoneos/ScreenshareCoreTests.xctest"; sourceTree = "<absolute>"; };
+		8710ACF02A131333006E74DD /* ScreenshareCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScreenshareCore.framework; path = "/Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ScreenshareCore/build/Debug-iphoneos/ScreenshareCore.framework"; sourceTree = "<absolute>"; };
+		8710ACF12A131333006E74DD /* ScreenshareCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ScreenshareCoreTests.xctest; path = "/Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ScreenshareCore/build/Debug-iphoneos/ScreenshareCoreTests.xctest"; sourceTree = "<absolute>"; };
 		87F174F92A0A184A0002E999 /* EnterURLSwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterURLSwiftUIViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,7 +100,7 @@
 			packageProductDependencies = (
 			);
 			productName = ScreenshareCore;
-			productReference = 87C61A9B2A0CD14F00EF34EF /* ScreenshareCore.framework */;
+			productReference = 8710ACF02A131333006E74DD /* ScreenshareCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		87026F742A09F10B00B710D0 /* ScreenshareCoreTests */ = {
@@ -118,7 +118,7 @@
 			);
 			name = ScreenshareCoreTests;
 			productName = ScreenshareCoreTests;
-			productReference = 87C61A9C2A0CD14F00EF34EF /* ScreenshareCoreTests.xctest */;
+			productReference = 8710ACF12A131333006E74DD /* ScreenshareCoreTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */

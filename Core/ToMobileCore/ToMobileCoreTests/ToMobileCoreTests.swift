@@ -6,8 +6,10 @@
 //
 
 import XCTest
-//import SocketIO
-//import Nimble
+import SocketIO
+import AMSMB2
+import Nimble
+import Quick
 
 final class ToMobileCoreTests: XCTestCase {
 
@@ -21,7 +23,7 @@ final class ToMobileCoreTests: XCTestCase {
 
     func testExample() throws {
         XCTAssertEqual(4 + 4, 8)
-//        expect(1).to(equal(3))
+        expect(1).to(equal(3))
     }
 
     func testPerformanceExample() throws {
