@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		87026F6A2A09F0E000B710D0 /* ToMobileCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026F692A09F0E000B710D0 /* ToMobileCoreTests.swift */; };
+		8710AD0A2A136BB0006E74DD /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710AD092A136BB0006E74DD /* Nimble.xcframework */; };
+		8710AD0C2A1370E9006E74DD /* Quick.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710AD0B2A1370E9006E74DD /* Quick.xcframework */; };
+		8710AD0F2A1373F0006E74DD /* AMSMB2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710AD0D2A13739F006E74DD /* AMSMB2.xcframework */; };
 		87F174FC2A0A1BEA0002E999 /* ExportGuideSwiftUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F174FB2A0A1BEA0002E999 /* ExportGuideSwiftUIViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -22,9 +25,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		87026F4C2A09E7E700B710D0 /* ToMobileCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ToMobileCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		87026F672A09F0E000B710D0 /* ToMobileCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToMobileCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87026F4C2A09E7E700B710D0 /* ToMobileCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ToMobileCore.framework; path = "/Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ToMobileCore/build/Debug-iphoneos/ToMobileCore.framework"; sourceTree = "<absolute>"; };
+		87026F672A09F0E000B710D0 /* ToMobileCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ToMobileCoreTests.xctest; path = "/Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ToMobileCore/build/Debug-iphoneos/ToMobileCoreTests.xctest"; sourceTree = "<absolute>"; };
 		87026F692A09F0E000B710D0 /* ToMobileCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToMobileCoreTests.swift; sourceTree = "<group>"; };
+		8710AD092A136BB0006E74DD /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Nimble.xcframework; path = /Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ScreenshareCore/../../Carthage/Build/Nimble.xcframework; sourceTree = "<absolute>"; };
+		8710AD0B2A1370E9006E74DD /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Quick.xcframework; path = /Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ScreenshareCore/../../Carthage/Build/Quick.xcframework; sourceTree = "<absolute>"; };
+		8710AD0D2A13739F006E74DD /* AMSMB2.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AMSMB2.xcframework; path = ../../Carthage/Build/AMSMB2.xcframework; sourceTree = "<group>"; };
 		87F174FB2A0A1BEA0002E999 /* ExportGuideSwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportGuideSwiftUIViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8710AD0F2A1373F0006E74DD /* AMSMB2.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8710AD0C2A1370E9006E74DD /* Quick.xcframework in Frameworks */,
+				8710AD0A2A136BB0006E74DD /* Nimble.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,17 +60,8 @@
 			children = (
 				87F174F72A0A172A0002E999 /* ToMobileCore */,
 				87026F682A09F0E000B710D0 /* ToMobileCoreTests */,
-				87026F4D2A09E7E700B710D0 /* Products */,
+				8710AD082A136BB0006E74DD /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		87026F4D2A09E7E700B710D0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				87026F4C2A09E7E700B710D0 /* ToMobileCore.framework */,
-				87026F672A09F0E000B710D0 /* ToMobileCoreTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		87026F682A09F0E000B710D0 /* ToMobileCoreTests */ = {
@@ -70,6 +70,16 @@
 				87026F692A09F0E000B710D0 /* ToMobileCoreTests.swift */,
 			);
 			path = ToMobileCoreTests;
+			sourceTree = "<group>";
+		};
+		8710AD082A136BB0006E74DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8710AD0D2A13739F006E74DD /* AMSMB2.xcframework */,
+				8710AD0B2A1370E9006E74DD /* Quick.xcframework */,
+				8710AD092A136BB0006E74DD /* Nimble.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		87F174F72A0A172A0002E999 /* ToMobileCore */ = {
@@ -157,7 +167,7 @@
 				Base,
 			);
 			mainGroup = 87026F422A09E7E700B710D0;
-			productRefGroup = 87026F4D2A09E7E700B710D0 /* Products */;
+			productRefGroup = 87026F422A09E7E700B710D0;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
