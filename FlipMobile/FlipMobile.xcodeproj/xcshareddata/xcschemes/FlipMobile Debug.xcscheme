@@ -39,6 +39,36 @@
                ReferencedContainer = "container:FlipMobile.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "87026F822A09F12700B710D0"
+               BuildableName = "CommonCoreTests.xctest"
+               BlueprintName = "CommonCoreTests"
+               ReferencedContainer = "container:../Core/CommonCore/CommonCore.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "87026F742A09F10B00B710D0"
+               BuildableName = "ScreenshareCoreTests.xctest"
+               BlueprintName = "ScreenshareCoreTests"
+               ReferencedContainer = "container:../Core/ScreenshareCore/ScreenshareCore.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "87026F662A09F0E000B710D0"
+               BuildableName = "ToMobileCoreTests.xctest"
+               BlueprintName = "ToMobileCoreTests"
+               ReferencedContainer = "container:../Core/ToMobileCore/ToMobileCore.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
