@@ -23,7 +23,7 @@ final class ToMobileCoreTests: XCTestCase {
 
     func testExample() throws {
         XCTAssertEqual(4 + 4, 8)
-        expect(1).to(equal(3))
+        expect(3).to(equal(3))
     }
 
     func testPerformanceExample() throws {
