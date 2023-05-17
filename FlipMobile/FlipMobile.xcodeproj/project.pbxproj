@@ -19,12 +19,12 @@
 		87026F9B2A09F16800B710D0 /* FlipMobileUploadExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 87026F912A09F16800B710D0 /* FlipMobileUploadExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8710AD112A13744A006E74DD /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710AD102A13744A006E74DD /* Nimble.xcframework */; };
 		8710AD132A13744A006E74DD /* Quick.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710AD122A13744A006E74DD /* Quick.xcframework */; };
-		8710AD172A1468D5006E74DD /* SocketIO.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710AD142A13798D006E74DD /* SocketIO.xcframework */; };
-		8710AD182A1468D5006E74DD /* SocketIO.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8710AD142A13798D006E74DD /* SocketIO.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8710AD192A1468D7006E74DD /* Lottie.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710ACF42A1313C5006E74DD /* Lottie.xcframework */; };
-		8710AD1A2A1468D7006E74DD /* Lottie.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8710ACF42A1313C5006E74DD /* Lottie.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		87C61ABF2A13123800EF34EF /* Starscream.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C61AB42A13121A00EF34EF /* Starscream.xcframework */; };
-		87C61AC02A13123900EF34EF /* Starscream.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87C61AB42A13121A00EF34EF /* Starscream.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8710AD172A1468D5006E74DD /* SocketIO.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710AD142A13798D006E74DD /* SocketIO.xcframework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8710AD182A1468D5006E74DD /* SocketIO.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8710AD142A13798D006E74DD /* SocketIO.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8710AD192A1468D7006E74DD /* Lottie.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710ACF42A1313C5006E74DD /* Lottie.xcframework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8710AD1A2A1468D7006E74DD /* Lottie.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8710ACF42A1313C5006E74DD /* Lottie.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		87C61ABF2A13123800EF34EF /* Starscream.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C61AB42A13121A00EF34EF /* Starscream.xcframework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		87C61AC02A13123900EF34EF /* Starscream.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 87C61AB42A13121A00EF34EF /* Starscream.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -212,7 +212,7 @@
 				87026EFD2A09E4CE00B710D0 /* Frameworks */,
 				87026EFE2A09E4CE00B710D0 /* Resources */,
 				87026F9F2A09F16800B710D0 /* Embed Foundation Extensions */,
-				87C61AAD2A0E341100EF34EF /* ShellScript */,
+				87C61AAD2A0E341100EF34EF /* Run Script */,
 				87C61AB02A1237DF00EF34EF /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -330,7 +330,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		87C61AAD2A0E341100EF34EF /* ShellScript */ = {
+		87C61AAD2A0E341100EF34EF /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -340,6 +340,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/SocketIO.xcframework/ios-arm64/SocketIO.framework",
 			);
+			name = "Run Script";
 			outputFileListPaths = (
 			);
 			outputPaths = (
