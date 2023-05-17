@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		87026F782A09F10B00B710D0 /* ScreenshareCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026F772A09F10B00B710D0 /* ScreenshareCoreTests.swift */; };
-		8710ACFD2A136850006E74DD /* SocketIO.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710ACF72A136843006E74DD /* SocketIO.xcframework */; };
-		8710ACFE2A136850006E74DD /* SocketIO.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8710ACF72A136843006E74DD /* SocketIO.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8710ACFD2A136850006E74DD /* SocketIO.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710ACF72A136843006E74DD /* SocketIO.xcframework */; platformFilter = ios; };
+		8710ACFE2A136850006E74DD /* SocketIO.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8710ACF72A136843006E74DD /* SocketIO.xcframework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8710AD062A136AB6006E74DD /* Quick.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710AD042A136AB6006E74DD /* Quick.xcframework */; };
 		8710AD072A136AB6006E74DD /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710AD052A136AB6006E74DD /* Nimble.xcframework */; };
 		87F174FA2A0A184A0002E999 /* EnterURLSwiftUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F174F92A0A184A0002E999 /* EnterURLSwiftUIViewModel.swift */; };
@@ -41,11 +41,11 @@
 
 /* Begin PBXFileReference section */
 		87026F772A09F10B00B710D0 /* ScreenshareCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshareCoreTests.swift; sourceTree = "<group>"; };
-		8710ACF12A131333006E74DD /* ScreenshareCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ScreenshareCoreTests.xctest; path = "/Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ScreenshareCore/build/Debug-iphoneos/ScreenshareCoreTests.xctest"; sourceTree = "<absolute>"; };
 		8710ACF72A136843006E74DD /* SocketIO.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SocketIO.xcframework; path = ../../Carthage/Build/SocketIO.xcframework; sourceTree = "<group>"; };
-		8710ACF92A136848006E74DD /* ScreenshareCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScreenshareCore.framework; path = "/Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ScreenshareCore/build/Debug-iphoneos/ScreenshareCore.framework"; sourceTree = "<absolute>"; };
 		8710AD042A136AB6006E74DD /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Quick.xcframework; path = ../../Carthage/Build/Quick.xcframework; sourceTree = "<group>"; };
 		8710AD052A136AB6006E74DD /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Nimble.xcframework; path = ../../Carthage/Build/Nimble.xcframework; sourceTree = "<group>"; };
+		87B118D82A14CAF700B057FD /* ScreenshareCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScreenshareCore.framework; path = "/Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ScreenshareCore/build/Debug-iphoneos/ScreenshareCore.framework"; sourceTree = "<absolute>"; };
+		87B118D92A14CAF700B057FD /* ScreenshareCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ScreenshareCoreTests.xctest; path = "/Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ScreenshareCore/build/Debug-iphoneos/ScreenshareCoreTests.xctest"; sourceTree = "<absolute>"; };
 		87F174F92A0A184A0002E999 /* EnterURLSwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterURLSwiftUIViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,7 +136,7 @@
 			packageProductDependencies = (
 			);
 			productName = ScreenshareCore;
-			productReference = 8710ACF92A136848006E74DD /* ScreenshareCore.framework */;
+			productReference = 87B118D82A14CAF700B057FD /* ScreenshareCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		87026F742A09F10B00B710D0 /* ScreenshareCoreTests */ = {
@@ -154,7 +154,7 @@
 			);
 			name = ScreenshareCoreTests;
 			productName = ScreenshareCoreTests;
-			productReference = 8710ACF12A131333006E74DD /* ScreenshareCoreTests.xctest */;
+			productReference = 87B118D92A14CAF700B057FD /* ScreenshareCoreTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */

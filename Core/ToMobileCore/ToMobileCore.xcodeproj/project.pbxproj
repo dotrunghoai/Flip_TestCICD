@@ -23,10 +23,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		87026F4C2A09E7E700B710D0 /* ToMobileCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ToMobileCore.framework; path = "/Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ToMobileCore/build/Debug-iphoneos/ToMobileCore.framework"; sourceTree = "<absolute>"; };
-		87026F672A09F0E000B710D0 /* ToMobileCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ToMobileCoreTests.xctest; path = "/Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ToMobileCore/build/Debug-iphoneos/ToMobileCoreTests.xctest"; sourceTree = "<absolute>"; };
 		87026F692A09F0E000B710D0 /* ToMobileCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToMobileCoreTests.swift; sourceTree = "<group>"; };
 		8710AD0D2A13739F006E74DD /* AMSMB2.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AMSMB2.xcframework; path = ../../Carthage/Build/AMSMB2.xcframework; sourceTree = "<group>"; };
+		87B118D62A14CAF700B057FD /* ToMobileCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ToMobileCore.framework; path = "/Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ToMobileCore/build/Debug-iphoneos/ToMobileCore.framework"; sourceTree = "<absolute>"; };
+		87B118D72A14CAF700B057FD /* ToMobileCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ToMobileCoreTests.xctest; path = "/Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ToMobileCore/build/Debug-iphoneos/ToMobileCoreTests.xctest"; sourceTree = "<absolute>"; };
 		87F174FB2A0A1BEA0002E999 /* ExportGuideSwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportGuideSwiftUIViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,7 +110,7 @@
 			);
 			name = ToMobileCore;
 			productName = ToMobileCore;
-			productReference = 87026F4C2A09E7E700B710D0 /* ToMobileCore.framework */;
+			productReference = 87B118D62A14CAF700B057FD /* ToMobileCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		87026F662A09F0E000B710D0 /* ToMobileCoreTests */ = {
@@ -128,7 +128,7 @@
 			);
 			name = ToMobileCoreTests;
 			productName = ToMobileCoreTests;
-			productReference = 87026F672A09F0E000B710D0 /* ToMobileCoreTests.xctest */;
+			productReference = 87B118D72A14CAF700B057FD /* ToMobileCoreTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
