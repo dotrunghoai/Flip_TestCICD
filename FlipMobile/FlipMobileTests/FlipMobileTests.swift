@@ -7,7 +7,7 @@
 
 import XCTest
 import Nimble
-import SocketIO
+//import SocketIO
 
 final class FlipMobileTests: XCTestCase {
 
