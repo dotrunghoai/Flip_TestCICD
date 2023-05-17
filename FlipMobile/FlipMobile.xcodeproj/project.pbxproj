@@ -324,7 +324,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		87C61AAD2A0E341100EF34EF /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputFileListPaths = (
@@ -337,9 +337,9 @@
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# /usr/local/bin/carthage copy-frameworks\n# $(SRCROOT)/Carthage/Build/AMSMB2.xcframework/ios-arm64/AMSMB2.framework\n# $(DERIVED_FILE_DIR)/Carthage/Build/AMSMB2.xcframework/ios-arm64\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n# $(SRCROOT)/Carthage/Build/AMSMB2.xcframework/ios-arm64/AMSMB2.framework\n# $(DERIVED_FILE_DIR)/Carthage/Build/AMSMB2.xcframework/ios-arm64\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
