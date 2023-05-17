@@ -1,12 +1,14 @@
 name: CI-CD Flip Mobile
 run-name: ${{ github.ref_name == 'master' && 'Deploy to TestFlight' || 'Run Unit Test'  }} | on ${{ github.ref_name }} branch | by @${{ github.actor }}
 
-on:
-  workflow_dispatch:
-    inputs:
-      isRelease:
-        type: boolean
-        description: is Release to TestFlight
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       isRelease:
+#         type: boolean
+#         description: is Release to TestFlight
+
+on: [push]
 
 jobs:
   test:
