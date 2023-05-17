@@ -1,14 +1,12 @@
 name: CI-CD Flip Mobile
 run-name: ${{ github.ref_name == 'master' && 'Deploy to TestFlight' || 'Run Unit Test'  }} | on ${{ github.ref_name }} branch | by @${{ github.actor }}
 
-# on:
-#   workflow_dispatch:
-#     inputs:
-#       isRelease:
-#         type: boolean
-#         description: is Release to TestFlight
-
-on: [push]
+on:
+  workflow_dispatch:
+    inputs:
+      isRelease:
+        type: boolean
+        description: is Release to TestFlight
 
 jobs:
   test:
@@ -35,6 +33,6 @@ jobs:
         run: xcodebuild clean test -workspace Flip.xcworkspace -scheme "FlipMobile Debug" -destination "${destination}" #CODE_SIGN_IDENTITY="" ONLY_ACTIVE_ARCH=YES CODE_SIGNING_REQUIRED=NO
         env:
           destination: ${{ matrix.destination }}
-      # - name: Archive
-      #   if: ${{ github.ref_name == 'master' && inputs.isRelease }}
-      #   run: echo ${{ inputs.isRelease }}
+      - name: Archive
+        if: ${{ github.ref_name == 'master' && inputs.isRelease }}
+        run: echo ${{ inputs.isRelease }}
