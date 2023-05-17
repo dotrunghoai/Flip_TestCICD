@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		87026F782A09F10B00B710D0 /* ScreenshareCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026F772A09F10B00B710D0 /* ScreenshareCoreTests.swift */; };
-		8710ACFD2A136850006E74DD /* SocketIO.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710ACF72A136843006E74DD /* SocketIO.xcframework */; platformFilter = ios; };
-		8710ACFE2A136850006E74DD /* SocketIO.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8710ACF72A136843006E74DD /* SocketIO.xcframework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8710ACFD2A136850006E74DD /* SocketIO.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710ACF72A136843006E74DD /* SocketIO.xcframework */; };
+		8710ACFE2A136850006E74DD /* SocketIO.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8710ACF72A136843006E74DD /* SocketIO.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8710AD062A136AB6006E74DD /* Quick.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710AD042A136AB6006E74DD /* Quick.xcframework */; };
 		8710AD072A136AB6006E74DD /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8710AD052A136AB6006E74DD /* Nimble.xcframework */; };
 		87F174FA2A0A184A0002E999 /* EnterURLSwiftUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F174F92A0A184A0002E999 /* EnterURLSwiftUIViewModel.swift */; };

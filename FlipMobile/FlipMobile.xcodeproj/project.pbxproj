@@ -330,7 +330,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/SocketIO.xcframework/ios-arm64/SocketIO.framework",
+				"$(SRCROOT)/Carthage/Build/SocketIO.xcframework",
 			);
 			name = "Run Script";
 			outputFileListPaths = (
