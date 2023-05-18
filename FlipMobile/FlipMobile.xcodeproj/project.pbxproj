@@ -339,7 +339,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n# $(SRCROOT)/Carthage/Build/AMSMB2.xcframework/ios-arm64/AMSMB2.framework\n# $(DERIVED_FILE_DIR)/Carthage/Build/AMSMB2.xcframework/ios-arm64\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# /usr/local/bin/carthage copy-frameworks\n# $(SRCROOT)/Carthage/Build/AMSMB2.xcframework/ios-arm64/AMSMB2.framework\n# $(DERIVED_FILE_DIR)/Carthage/Build/AMSMB2.xcframework/ios-arm64\nif which swiftlint >/dev/null; then\n  echo \"Linting Swift Source Code\"\n  LINT_TOOL=\"${SRCROOT}/../Tools/SwiftLint/swiftlint\"\n  ${LINT_TOOL} lint --config ${SRCROOT}/../.swiftlint.yml\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
