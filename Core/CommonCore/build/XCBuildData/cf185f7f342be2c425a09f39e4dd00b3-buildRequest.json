@@ -1,0 +1,88 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "b89e54972b1289e7151089be2e454dae8b6c35a3d9fd988eaf1f840aecf4f969"
+    },
+    {
+      "guid" : "b89e54972b1289e7151089be2e454dae5b7ce395477a446aa240cf839de4126d"
+    },
+    {
+      "guid" : "793c0351b91c81dee91ca756aae37c3010f8bc11e62bfa969940522d53c97d9d"
+    },
+    {
+      "guid" : "793c0351b91c81dee91ca756aae37c307c3dacebfd09d9d6f0273fe96078d040"
+    },
+    {
+      "guid" : "793c0351b91c81dee91ca756aae37c305e92d3fca7e1a61a2e5eb4f325b54861"
+    },
+    {
+      "guid" : "bccc183a2ed3df82bd98e54e42be5f668ab4debee36546b3002f530c3f6c4ebf"
+    },
+    {
+      "guid" : "bccc183a2ed3df82bd98e54e42be5f66d393f7e1ec23cd238f0aa0eb98939dc3"
+    },
+    {
+      "guid" : "84e6d7e0c28d6bb09fd4b188536260aa95b4f3efc1b54d52d4014c2aec6466a8"
+    },
+    {
+      "guid" : "84e6d7e0c28d6bb09fd4b188536260aa7de5c4401b0961f8549c747da3b54dbf"
+    }
+  ],
+  "containerPath" : "/Users/ios_1/Documents/DemoRepo/FlipMobile/Flip.xcworkspace",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "x86_64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator16.2",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "x86_64"
+      ],
+      "targetArchitecture" : "x86_64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/ios_1/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/ios_1/Library/Developer/Xcode/DerivedData/Flip-cedxkorperytinazmseljblaqjnz/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/ios_1/Library/Developer/Xcode/DerivedData/Flip-cedxkorperytinazmseljblaqjnz/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone15,3",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "16.2",
+          "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "iPhone15,3",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+          "ENABLE_PREVIEWS" : "NO",
+          "TARGET_DEVICE_IDENTIFIER" : "99F50CD3-8980-4A1B-AC91-D6729F378DED",
+          "TARGET_DEVICE_MODEL" : "iPhone15,3",
+          "TARGET_DEVICE_OS_VERSION" : "16.2",
+          "TARGET_DEVICE_PLATFORM_NAME" : "iphonesimulator"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

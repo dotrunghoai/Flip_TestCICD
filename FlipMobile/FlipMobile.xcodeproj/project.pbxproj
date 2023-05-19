@@ -198,7 +198,7 @@
 				87026EFD2A09E4CE00B710D0 /* Frameworks */,
 				87026EFE2A09E4CE00B710D0 /* Resources */,
 				87026F9F2A09F16800B710D0 /* Embed Foundation Extensions */,
-				87C61AAD2A0E341100EF34EF /* Run Script */,
+				87C61AAD2A0E341100EF34EF /* Run SwiftLint */,
 				87C61AB02A1237DF00EF34EF /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -316,7 +316,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		87C61AAD2A0E341100EF34EF /* Run Script */ = {
+		87C61AAD2A0E341100EF34EF /* Run SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
 			files = (
@@ -325,14 +325,14 @@
 			);
 			inputPaths = (
 			);
-			name = "Run Script";
+			name = "Run SwiftLint";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# /usr/local/bin/carthage copy-frameworks\n# $(SRCROOT)/Carthage/Build/AMSMB2.xcframework/ios-arm64/AMSMB2.framework\n# $(DERIVED_FILE_DIR)/Carthage/Build/AMSMB2.xcframework/ios-arm64\nif which swiftlint >/dev/null; then\n    echo \"Linting Swift Source Code\"\n    LINT_TOOL=\"${SRCROOT}/Tools/SwiftLint/swiftlint\"\n    ${LINT_TOOL} lint --config ${SRCROOT}/Tools/SwiftLint/.swiftlint.yml\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# /usr/local/bin/carthage copy-frameworks\n# $(SRCROOT)/Carthage/Build/AMSMB2.xcframework/ios-arm64/AMSMB2.framework\n# $(DERIVED_FILE_DIR)/Carthage/Build/AMSMB2.xcframework/ios-arm64\nif which swiftlint >/dev/null; then\n    LINT_TOOL=\"${SRCROOT}/../Tools/SwiftLint/swiftlint\"\n    ${LINT_TOOL} lint --config ${SRCROOT}/../.swiftlint.yml\n    #swiftlint lint --config ${SRCROOT}/../.swiftlint.yml\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

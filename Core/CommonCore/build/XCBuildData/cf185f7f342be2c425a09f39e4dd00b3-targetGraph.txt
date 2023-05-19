@@ -1,0 +1,15 @@
+Target dependency graph (9 targets)
+CommonCore in CommonCore, no dependencies
+CommonCoreTests in CommonCore, depends on:
+CommonCore in CommonCore (explicit)
+FlipMobileUploadExtension in FlipMobile, no dependencies
+FlipMobile in FlipMobile, depends on:
+FlipMobileUploadExtension in FlipMobile (explicit)
+FlipMobileTests in FlipMobile, depends on:
+FlipMobile in FlipMobile (explicit)
+ScreenshareCore in ScreenshareCore, no dependencies
+ScreenshareCoreTests in ScreenshareCore, depends on:
+ScreenshareCore in ScreenshareCore (explicit)
+ToMobileCore in ToMobileCore, no dependencies
+ToMobileCoreTests in ToMobileCore, depends on:
+ToMobileCore in ToMobileCore (explicit)

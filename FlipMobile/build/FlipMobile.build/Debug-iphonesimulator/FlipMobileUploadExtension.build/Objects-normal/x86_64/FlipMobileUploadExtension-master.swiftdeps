@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "4dd4f7af28ceedd4ff328ce08f0600abacfc009a5b504695191ca3f79f93b6ed"
+build_start_time: [1684382736, 521536827]
+build_end_time: [1684382737, 430139064]
+inputs:
+  "/Users/ios_1/Documents/DemoRepo/FlipMobile/FlipMobile/FlipMobileUploadExtension/SampleHandler.swift": [1683625765, 626116037]

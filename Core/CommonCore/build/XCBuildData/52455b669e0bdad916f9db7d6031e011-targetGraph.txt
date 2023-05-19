@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+FlipMobileUploadExtension in FlipMobile, no dependencies
+FlipMobile in FlipMobile, depends on:
+FlipMobileUploadExtension in FlipMobile (explicit)

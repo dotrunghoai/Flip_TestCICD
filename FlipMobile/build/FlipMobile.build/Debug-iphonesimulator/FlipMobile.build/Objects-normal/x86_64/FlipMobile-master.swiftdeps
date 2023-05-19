@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "af4aedbc364d1394a0afa80b6bea728539f964ef9f5a0b99cb8f606d5bc4c9db"
+build_start_time: [1684382736, 897728919]
+build_end_time: [1684382736, 937357902]
+inputs:
+  "/Users/ios_1/Documents/DemoRepo/FlipMobile/FlipMobile/FlipMobile/AppDelegate.swift": !private [1683598670, 268298864]
+  "/Users/ios_1/Documents/DemoRepo/FlipMobile/FlipMobile/FlipMobile/SceneDelegate.swift": !private [1683598670, 272271156]
+  "/Users/ios_1/Documents/DemoRepo/FlipMobile/FlipMobile/FlipMobile/ViewController.swift": !private [1684382668, 706730365]

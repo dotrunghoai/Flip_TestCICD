@@ -44,8 +44,8 @@
 		8710ACF72A136843006E74DD /* SocketIO.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SocketIO.xcframework; path = ../../Carthage/Build/SocketIO.xcframework; sourceTree = "<group>"; };
 		8710AD042A136AB6006E74DD /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Quick.xcframework; path = ../../Carthage/Build/Quick.xcframework; sourceTree = "<group>"; };
 		8710AD052A136AB6006E74DD /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Nimble.xcframework; path = ../../Carthage/Build/Nimble.xcframework; sourceTree = "<group>"; };
-		87B118D82A14CAF700B057FD /* ScreenshareCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScreenshareCore.framework; path = "/Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ScreenshareCore/build/Debug-iphoneos/ScreenshareCore.framework"; sourceTree = "<absolute>"; };
 		87B118D92A14CAF700B057FD /* ScreenshareCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ScreenshareCoreTests.xctest; path = "/Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ScreenshareCore/build/Debug-iphoneos/ScreenshareCoreTests.xctest"; sourceTree = "<absolute>"; };
+		87B118DD2A16089900B057FD /* ScreenshareCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScreenshareCore.framework; path = "/Users/ios_1/Documents/DemoRepo/FlipMobile/Core/ScreenshareCore/build/Debug-iphoneos/ScreenshareCore.framework"; sourceTree = "<absolute>"; };
 		87F174F92A0A184A0002E999 /* EnterURLSwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterURLSwiftUIViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +127,7 @@
 				87026F352A09E78A00B710D0 /* Frameworks */,
 				87026F362A09E78A00B710D0 /* Resources */,
 				8710ACFF2A136850006E74DD /* Embed Frameworks */,
+				87B118DC2A1604E300B057FD /* Embedded Carthage */,
 			);
 			buildRules = (
 			);
@@ -136,7 +137,7 @@
 			packageProductDependencies = (
 			);
 			productName = ScreenshareCore;
-			productReference = 87B118D82A14CAF700B057FD /* ScreenshareCore.framework */;
+			productReference = 87B118DD2A16089900B057FD /* ScreenshareCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		87026F742A09F10B00B710D0 /* ScreenshareCoreTests */ = {
@@ -211,6 +212,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87B118DC2A1604E300B057FD /* Embedded Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../../Carthage/Build/SocketIO.xcframework/ios-arm64/SocketIO.framework",
+			);
+			name = "Embedded Carthage";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# $(SRCROOT)/../../Carthage/Build/SocketIO.xcframework/ios-arm64/SocketIO.framework\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		87026F342A09E78A00B710D0 /* Sources */ = {

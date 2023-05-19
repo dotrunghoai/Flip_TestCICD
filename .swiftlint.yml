@@ -14,13 +14,14 @@ opt_in_rules:
 - redundant_nil_coalescing
 - switch_case_on_newline
 - unneeded_parentheses_in_closure_argument
+- vertical_whitespace
 - force_cast
+- identifier_name
 - force_unwrapping
 
 disabled_rules:
 - closure_end_indentation
 - function_parameter_count
-- identifier_name
 - no_fallthrough_only # https://github.com/realm/SwiftLint/issues/2276
 - redundant_string_enum_value
 - superfluous_disable_command
@@ -28,10 +29,13 @@ disabled_rules:
 - switch_case_on_newline
 
 included:
-- Source
+  - FlipMobile/FlipMobile
+  - Core/ScreenshareCore
+  - Core/ToMobileCore
 
 excluded:
 - Carthage
+- /.swiftlint.yml
 
 line_length:
   warning: 160
@@ -62,7 +66,7 @@ custom_rules:
     regex: '\(\S+\?\.\S+\)!'
     name: "Late Force Unwrapping"
     message: "Don't use ? first to force unwrap later – directly unwrap within the parantheses."
-    severity: warning
+    severity: error
   missing_docs:
     included: ".*\\.swift"
     regex: '\n *(?!\/\/\/)(\/\/)?[^\n\/]*\n *(?:@\S+ )*(?:public|open)'
@@ -92,6 +96,9 @@ custom_rules:
     regex: '\/\/\s*MARK:[^\n]*(\n)(?!\n)|(\n\n\n)[ \t]*\/\/\s*MARK:|[^\s{]\n[^\n\/]*\/\/\s*MARK:'
     name: "Vertical Whitespaces Around MARK:"
     message: "Include a single vertical whitespace (empty line) before and after MARK: comments."
+  vertical_whitespace:
+    included: ".*\\.swift"
+    severity: error
   whitespace_comment_start:
     included: ".*\\.swift"
     regex: '[^:#][^:#]\/\/[^\s\/]'
@@ -104,3 +111,7 @@ custom_rules:
     name: "Carthage Typo"
     message: "Found a possible Carthage typo"
     severity: warning
+  force_unwrapping:
+    included: ".*\\.(swift|md)"
+    message: "ABC XYZ"
+    severity: error
