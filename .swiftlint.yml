@@ -14,10 +14,6 @@ opt_in_rules:
 - redundant_nil_coalescing
 - switch_case_on_newline
 - unneeded_parentheses_in_closure_argument
-# - vertical_whitespace
-# - force_cast
-# - identifier_name
-# - force_unwrapping
 
 disabled_rules:
 - closure_end_indentation
@@ -27,6 +23,10 @@ disabled_rules:
 - superfluous_disable_command
 - large_tuple
 - switch_case_on_newline
+- vertical_whitespace
+- force_cast
+- identifier_name
+- force_unwrapping
 
 included:
   - FlipMobile/FlipMobile
